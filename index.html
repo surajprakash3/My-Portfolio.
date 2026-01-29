@@ -353,6 +353,15 @@ main {
   background: var(--bg-gradient-onyx);
   border-radius: 50%;
   overflow: hidden;
+  width: 150px;
+  height: 150px;
+}
+
+.avatar-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .info-content .name {
@@ -1384,9 +1393,16 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar-info { gap: 25px; }
 
-  .avatar-box { border-radius: 30px; }
+  .avatar-box {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+  }
 
-  .avatar-box img { width: 120px; }
+  .avatar-box img {
+    width: 100%;
+    height: 100%;
+  }
 
   .info-content .name { margin-bottom: 15px; }
 
@@ -1861,7 +1877,10 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar-info { flex-direction: column; }
 
-  .avatar-box img { width: 150px; }
+  .avatar-box img {
+    width: 100%;
+    height: 100%;
+  }
 
   .info-content .name {
     white-space: nowrap;
@@ -2257,37 +2276,17 @@ textarea.form-input::-webkit-resizer { display: none; }
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Application Development in Java - Certificate</h4>
+              <h4 class="h4 timeline-item-title">Application Development in Java (Certificate)</h4>
 
-              <span>Jul 2025</span>
+              <span>Jun 2025 – Jul 2025</span>
 
-              <p class="timeline-text">
-                Lovely Professional University. Engineered multiple GUI-based applications using Java Swing, enhancing user interaction and functionality leading to a 30% increase in usability and engagement.
-              </p>
+              <p class="timeline-text">Lovely Professional University</p>
 
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Object-Oriented Programming & Data Structures</h4>
-
-              <span>2023 - 2024</span>
-
-              <p class="timeline-text">
-                Used object-oriented programming concepts such as inheritance, polymorphism, and encapsulation, improving code modularity and maintainability by 40%.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">File Handling & Performance Optimization</h4>
-
-              <span>2023 - 2024</span>
-
-              <p class="timeline-text">
-                Optimized file handling and data processing operations reducing input/output processing time by 50% and boosted application efficiency.
-              </p>
+              <ul style="margin-left: 20px; color: var(--light-gray); font-size: var(--fs-6);">
+                <li>• Developed multiple GUI-based applications using Java Swing, enhancing user interaction and functionality and leading to a 30% increase in usability and engagement.</li>
+                <li>• Implemented object-oriented programming concepts such as inheritance, polymorphism, and encapsulation, improving code modularity and maintainability by 40%.</li>
+                <li>• Optimized file handling and data processing operations, reduced input/output processing time by 50%, and boosted application efficiency.</li>
+              </ul>
 
             </li>
 
@@ -2831,6 +2830,23 @@ textarea.form-input::-webkit-resizer { display: none; }
             <a class="social-card" href="https://youtube.com/@techplusinformation?si=qXgSHoGYXPHbv5xs" target="_blank" rel="noopener" aria-label="YouTube">
               <ion-icon name="logo-youtube"></ion-icon>
             </a>
+          </div>
+
+          <h3 class="h3" style="margin: 25px 0 10px;">Unprofessional</h3>
+
+          <div class="social-grid">
+            <div class="social-card" role="img" aria-label="Instagram">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </div>
+            <div class="social-card" role="img" aria-label="Facebook">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </div>
+            <div class="social-card" role="img" aria-label="Snapchat">
+              <ion-icon name="logo-snapchat"></ion-icon>
+            </div>
+            <div class="social-card" role="img" aria-label="WhatsApp">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </div>
           </div>
 
         </section>
