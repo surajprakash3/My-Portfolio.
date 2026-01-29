@@ -941,6 +941,32 @@ main {
   line-height: 1.6;
 }
 
+.experience-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.experience-card {
+  background: var(--eerie-black-1);
+  border: 1px solid var(--jet);
+  border-radius: 16px;
+  padding: 16px 18px;
+  box-shadow: var(--shadow-1);
+}
+
+.experience-card .timeline-item-title {
+  margin-bottom: 6px;
+}
+
+.experience-card span {
+  display: inline-block;
+  color: var(--orange-yellow-crayola);
+  font-size: var(--fs-6);
+  margin-bottom: 8px;
+}
+
 
 /**
  * skills 
@@ -2012,7 +2038,7 @@ textarea.form-input::-webkit-resizer { display: none; }
             <div class="contact-info">
               <p class="contact-title">Birthday</p>
 
-              <time datetime="1982-06-23">June 23, 1982</time>
+              <time datetime="1982-06-23">August 24, 2004</time>
             </div>
 
           </li>
@@ -2189,6 +2215,22 @@ textarea.form-input::-webkit-resizer { display: none; }
 
             </li>
 
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <ion-icon name="color-palette-outline"></ion-icon>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">UI/UX Designer</h4>
+
+                <p class="service-item-text">
+                  A focuses on creating user-friendly, visually appealing, and intuitive digital experiences.
+                </p>
+              </div>
+
+            </li>
+
           </ul>
 
         </section>
@@ -2331,6 +2373,28 @@ textarea.form-input::-webkit-resizer { display: none; }
           <ol class="timeline-list">
 
             <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Portfolio Website</h4>
+              <span>Jan 2026 - Jan 2026</span>
+              <p class="timeline-text" style="margin-bottom: 10px;">HTML, CSS, JavaScript | <a href="https://github.com/surajprakash3" style="color: var(--orange-yellow-crayola);">GitHub</a></p>
+              <ul style="margin-left: 20px; color: var(--light-gray); font-size: var(--fs-6);">
+                <li>• Developed a responsive personal portfolio website using HTML, CSS, and JavaScript to showcase projects and skills.</li>
+                <li>• Optimized asset loading and adaptive layouts, improving website performance by 40% across devices.</li>
+                <li>• Enhanced user engagement with interactive elements and smooth scroll-based animations.</li>
+              </ul>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Apna Book Web</h4>
+              <span>Oct 2025 - Nov 2025</span>
+              <p class="timeline-text" style="margin-bottom: 10px;">JavaScript, Node.js, Express, MongoDB | <a href="https://github.com/surajprakash3" style="color: var(--orange-yellow-crayola);">GitHub</a></p>
+              <ul style="margin-left: 20px; color: var(--light-gray); font-size: var(--fs-6);">
+                <li>• Built a full-stack bookstore application with React and Tailwind CSS, featuring a clean and responsive UI.</li>
+                <li>• Implemented JavaScript-based CRUD functionality using Express and MongoDB for managing books, users, and orders.</li>
+                <li>• Added secure authentication and smooth search, browse, and purchase workflows to enhance user experience.</li>
+              </ul>
+            </li>
+
+            <li class="timeline-item">
               <h4 class="h4 timeline-item-title">Digital Clock & Stopwatch</h4>
               <span>Jul 2025 - Aug 2025</span>
               <p class="timeline-text" style="margin-bottom: 10px;">Java, AWT, Swing | <a href="https://github.com/surajprakash3" style="color: var(--orange-yellow-crayola);">GitHub</a></p>
@@ -2338,17 +2402,6 @@ textarea.form-input::-webkit-resizer { display: none; }
                 <li>• Developed a real-time digital clock and stopwatch with millisecond accuracy using Java Swing.</li>
                 <li>• Integrated efficient event handling and threading, reducing CPU usage by 35%.</li>
                 <li>• Designed a clean, user-friendly GUI with start, stop, lap, and reset features.</li>
-              </ul>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Apna Book Web</h4>
-              <span>Oct 2025 - Present</span>
-              <p class="timeline-text" style="margin-bottom: 10px;">JavaScript, Node.js, Express, MongoDB | <a href="https://github.com/surajprakash3" style="color: var(--orange-yellow-crayola);">GitHub</a></p>
-              <ul style="margin-left: 20px; color: var(--light-gray); font-size: var(--fs-6);">
-                <li>• Built a full-stack bookstore application with React and Tailwind CSS, featuring a clean and responsive UI.</li>
-                <li>• Implemented JavaScript-based CRUD functionality using Express and MongoDB for managing books, users, and orders.</li>
-                <li>• Added secure authentication and smooth search, browse, and purchase workflows to enhance user experience.</li>
               </ul>
             </li>
 
@@ -2472,106 +2525,106 @@ textarea.form-input::-webkit-resizer { display: none; }
             <h3 class="h3">Experience</h3>
           </div>
 
-          <ol class="timeline-list">
+          <div class="experience-cards">
 
-            <li class="timeline-item">
+            <div class="experience-card">
               <h4 class="h4 timeline-item-title">Chief Operating Officer (Part-time)</h4>
               <span>Sep 2025 – Present</span>
               <p class="timeline-text">Syntax · Jalandhar, Punjab, India · Hybrid</p>
               <p class="timeline-text">Lead operational planning and cross-team coordination. Support strategic decision-making and team management.</p>
-            </li>
+            </div>
 
-            <li class="timeline-item">
+            <div class="experience-card">
               <h4 class="h4 timeline-item-title">Unit Leader – UMANG (Full-time)</h4>
               <span>Jan 2025 – Present</span>
               <p class="timeline-text">Unit Umang – LPUNSS · Jalandhar, Punjab, India · Skills: Team Leadership, Event Organizing</p>
               <p class="timeline-text">Lead NSS unit activities and social initiatives. Manage volunteers and coordinate community events.</p>
-            </li>
+            </div>
 
-            <li class="timeline-item">
+            <div class="experience-card">
               <h4 class="h4 timeline-item-title">NSS Candidate (Part-time)</h4>
               <span>Jan 2025 – Present</span>
               <p class="timeline-text">LPUNSS · Jalandhar, Punjab, India · Skills: Discipline, Parade</p>
               <p class="timeline-text">Participate in discipline-focused training and community service activities.</p>
-            </li>
+            </div>
 
-            <li class="timeline-item">
+            <div class="experience-card">
               <h4 class="h4 timeline-item-title">Campus Ambassador</h4>
               <span>Jul 2025 – Present</span>
               <p class="timeline-text">Eduveda Academy · Hybrid</p>
               <p class="timeline-text">Promote educational programs and student engagement initiatives.</p>
-            </li>
+            </div>
 
-            <li class="timeline-item">
+            <div class="experience-card">
               <h4 class="h4 timeline-item-title">Campus Ambassador</h4>
               <span>Jun 2025 – Present</span>
               <p class="timeline-text">JYESTA Corporate Entity</p>
               <p class="timeline-text">Represent the organization on campus and support outreach programs.</p>
-            </li>
+            </div>
 
-            <li class="timeline-item">
+            <div class="experience-card">
               <h4 class="h4 timeline-item-title">Human Resources Intern</h4>
               <span>Jun 2025 – Jul 2025</span>
               <p class="timeline-text">Prashraya Welfare Foundation (Team Aashraya)</p>
               <p class="timeline-text">Supported HR operations and volunteer coordination for welfare initiatives.</p>
-            </li>
+            </div>
 
-            <li class="timeline-item">
+            <div class="experience-card">
               <h4 class="h4 timeline-item-title">Business Development Intern</h4>
               <span>May 2025 – Jun 2025</span>
               <p class="timeline-text">d2d-YouthStory · Hybrid · Skills: Strategic Business Development, Business Support</p>
               <p class="timeline-text">Supported business growth initiatives and partnership outreach.</p>
-            </li>
+            </div>
 
-            <li class="timeline-item">
+            <div class="experience-card">
               <h4 class="h4 timeline-item-title">Core Team Member</h4>
               <span>Nov 2024 – Present</span>
               <p class="timeline-text">AI Jalandhar · Jalandhar, Punjab, India · Skills: Python, Web Development</p>
               <p class="timeline-text">Contribute to AI-focused technical discussions and community events.</p>
-            </li>
+            </div>
 
-            <li class="timeline-item">
+            <div class="experience-card">
               <h4 class="h4 timeline-item-title">Member (Part-time)</h4>
               <span>Aug 2024 – Present</span>
               <p class="timeline-text">RISC – Robotics and Intelligent System Community (LPU)</p>
               <p class="timeline-text">Engage in robotics and intelligent systems learning activities.</p>
-            </li>
+            </div>
 
-            <li class="timeline-item">
+            <div class="experience-card">
               <h4 class="h4 timeline-item-title">Social Services Intern</h4>
               <span>Jun 2024 – Jul 2024</span>
               <p class="timeline-text">Glad Bharat Foundation</p>
               <p class="timeline-text">Supported social development and community welfare programs.</p>
-            </li>
+            </div>
 
-            <li class="timeline-item">
+            <div class="experience-card">
               <h4 class="h4 timeline-item-title">Campus Ambassador</h4>
               <span>Mar 2024 – Present</span>
               <p class="timeline-text">DevTown</p>
               <p class="timeline-text">Promote tech learning opportunities and developer programs among students.</p>
-            </li>
+            </div>
 
-            <li class="timeline-item">
+            <div class="experience-card">
               <h4 class="h4 timeline-item-title">Volunteer</h4>
               <span>Aug 2023 – Dec 2024</span>
               <p class="timeline-text">LPUNSS · Jalandhar, Punjab, India · Skills: Event Management</p>
               <p class="timeline-text">Supported university-level social events and national campaigns.</p>
-            </li>
+            </div>
 
-            <li class="timeline-item">
+            <div class="experience-card">
               <h4 class="h4 timeline-item-title">Student</h4>
               <span>Aug 2023 – Present</span>
               <p class="timeline-text">Lovely Professional University · Punjab, India · Skills: Microservices, UI/UX, Cloud Architecture</p>
-            </li>
+            </div>
 
-            <li class="timeline-item">
+            <div class="experience-card">
               <h4 class="h4 timeline-item-title">Co-Founder (Full-time)</h4>
               <span>Jun 2021 – Present</span>
               <p class="timeline-text">Titanium Yoga Club, Gaya · Gaya, Bihar, India · Skills: Human Resources, Yoga</p>
               <p class="timeline-text">Co-founded a wellness community focused on physical and mental well-being. Organize yoga sessions that promote resilience, mindfulness, and healthy living.</p>
-            </li>
+            </div>
 
-          </ol>
+          </div>
 
         </section>
 
@@ -2589,183 +2642,183 @@ textarea.form-input::-webkit-resizer { display: none; }
 
             <div class="skills-category">
               <h4 class="h4" style="color: var(--orange-yellow-crayola); margin-bottom: 12px;">Cloud & AWS</h4>
-              <ul class="timeline-list">
-                <li class="timeline-item">
+              <div class="experience-cards">
+                <div class="experience-card">
                   <h4 class="h4 timeline-item-title">AWS Academy Graduate – Cloud Architecting (Training Badge)</h4>
                   <span>Jan 2026</span>
                   <p class="timeline-text">Amazon Web Services (AWS)</p>
-                </li>
-                <li class="timeline-item">
+                </div>
+                <div class="experience-card">
                   <h4 class="h4 timeline-item-title">AWS Educate: Introduction to Cloud 101 (Training Badge)</h4>
                   <span>Jan 2026</span>
                   <p class="timeline-text">Amazon Web Services (AWS)</p>
-                </li>
-                <li class="timeline-item">
+                </div>
+                <div class="experience-card">
                   <h4 class="h4 timeline-item-title">AWS APAC – Solutions Architecture Job Simulation</h4>
                   <span>Jun 2025</span>
                   <p class="timeline-text">Forage · Credential ID: Ln4q2wBGn4sPGMwpa</p>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
 
             <div class="skills-category" style="margin-top: 20px;">
               <h4 class="h4" style="color: var(--orange-yellow-crayola); margin-bottom: 12px;">Oracle & AI</h4>
-              <ul class="timeline-list">
-                <li class="timeline-item">
+              <div class="experience-cards">
+                <div class="experience-card">
                   <h4 class="h4 timeline-item-title">Oracle Cloud Infrastructure 2025 – AI Foundations Associate</h4>
                   <span>Oct 2025</span>
                   <p class="timeline-text">Oracle</p>
-                </li>
-                <li class="timeline-item">
+                </div>
+                <div class="experience-card">
                   <h4 class="h4 timeline-item-title">Build Generative AI Apps and Solutions with No-Code Tools</h4>
                   <span>Aug 2025</span>
                   <p class="timeline-text">Infosys Springboard</p>
-                </li>
-                <li class="timeline-item">
+                </div>
+                <div class="experience-card">
                   <h4 class="h4 timeline-item-title">ChatGPT-4 Prompt Engineering: Generative AI & LLMs</h4>
                   <span>Aug 2025</span>
                   <p class="timeline-text">Infosys Springboard</p>
-                </li>
-                <li class="timeline-item">
+                </div>
+                <div class="experience-card">
                   <h4 class="h4 timeline-item-title">Master Generative AI & Generative AI Tools (ChatGPT & More)</h4>
                   <span>Aug 2025</span>
                   <p class="timeline-text">Infosys Springboard</p>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
 
             <div class="skills-category" style="margin-top: 20px;">
               <h4 class="h4" style="color: var(--orange-yellow-crayola); margin-bottom: 12px;">Computer Science & Networking</h4>
-              <ul class="timeline-list">
-                <li class="timeline-item">
+              <div class="experience-cards">
+                <div class="experience-card">
                   <h4 class="h4 timeline-item-title">Computational Theory: Language Principles & Finite Automata</h4>
                   <span>Aug 2025</span>
                   <p class="timeline-text">Infosys Springboard</p>
-                </li>
-                <li class="timeline-item">
+                </div>
+                <div class="experience-card">
                   <h4 class="h4 timeline-item-title">Packet Switching Networks and Algorithms</h4>
                   <span>Oct 2024</span>
                   <p class="timeline-text">University of Colorado · Credential ID: DNIDB0OIG3MU</p>
-                </li>
-                <li class="timeline-item">
+                </div>
+                <div class="experience-card">
                   <h4 class="h4 timeline-item-title">Peer-to-Peer Protocols and Local Area Networks</h4>
                   <span>Oct 2024</span>
                   <p class="timeline-text">University of Colorado · Credential ID: CTTKARSD8J2O</p>
-                </li>
-                <li class="timeline-item">
+                </div>
+                <div class="experience-card">
                   <h4 class="h4 timeline-item-title">TCP/IP and Advanced Topics</h4>
                   <span>Oct 2024</span>
                   <p class="timeline-text">University of Colorado · Credential ID: IBCSB75ZC5LK</p>
-                </li>
-                <li class="timeline-item">
+                </div>
+                <div class="experience-card">
                   <h4 class="h4 timeline-item-title">Fundamentals of Network Communication</h4>
                   <span>Sep 2024</span>
                   <p class="timeline-text">University of Colorado</p>
-                </li>
-                <li class="timeline-item">
+                </div>
+                <div class="experience-card">
                   <h4 class="h4 timeline-item-title">The Bits and Bytes of Computer Networking</h4>
                   <span>Sep 2024</span>
                   <p class="timeline-text">Google</p>
-                </li>
-                <li class="timeline-item">
+                </div>
+                <div class="experience-card">
                   <h4 class="h4 timeline-item-title">Digital Systems: From Logic Gates to Processors</h4>
                   <span>Sep 2024</span>
                   <p class="timeline-text">Universitat Autònoma de Barcelona</p>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
 
             <div class="skills-category" style="margin-top: 20px;">
               <h4 class="h4" style="color: var(--orange-yellow-crayola); margin-bottom: 12px;">Programming & Development</h4>
-              <ul class="timeline-list">
-                <li class="timeline-item">
+              <div class="experience-cards">
+                <div class="experience-card">
                   <h4 class="h4 timeline-item-title">MongoDB Basics for Students</h4>
                   <span>Jul 2025</span>
                   <p class="timeline-text">MongoDB</p>
-                </li>
-                <li class="timeline-item">
+                </div>
+                <div class="experience-card">
                   <h4 class="h4 timeline-item-title">Skyscanner – Front-End Software Engineering Job Simulation</h4>
                   <span>Dec 2025</span>
                   <p class="timeline-text">Forage · Credential ID: Z7KkubMRBoNLJ4gtc</p>
-                </li>
-                <li class="timeline-item">
+                </div>
+                <div class="experience-card">
                   <h4 class="h4 timeline-item-title">The Complete Web Development Bootcamp 2024</h4>
                   <span>Feb 2024</span>
                   <p class="timeline-text">Udemy</p>
-                </li>
-                <li class="timeline-item">
+                </div>
+                <div class="experience-card">
                   <h4 class="h4 timeline-item-title">Responsive Web Design</h4>
                   <span>Oct 2023</span>
                   <p class="timeline-text">freeCodeCamp</p>
-                </li>
-                <li class="timeline-item">
+                </div>
+                <div class="experience-card">
                   <h4 class="h4 timeline-item-title">SQL (Basics)</h4>
                   <span>Apr 2024</span>
                   <p class="timeline-text">HackerRank</p>
-                </li>
-                <li class="timeline-item">
+                </div>
+                <div class="experience-card">
                   <h4 class="h4 timeline-item-title">Python (Basics)</h4>
                   <span>Apr 2024</span>
                   <p class="timeline-text">HackerRank</p>
-                </li>
-                <li class="timeline-item">
+                </div>
+                <div class="experience-card">
                   <h4 class="h4 timeline-item-title">CSS (Basic)</h4>
                   <span>Sep 2024</span>
                   <p class="timeline-text">HackerRank</p>
-                </li>
-                <li class="timeline-item">
+                </div>
+                <div class="experience-card">
                   <h4 class="h4 timeline-item-title">C Programming</h4>
                   <span>May 2024</span>
                   <p class="timeline-text">iamneo – An NIIT Venture</p>
-                </li>
-                <li class="timeline-item">
+                </div>
+                <div class="experience-card">
                   <h4 class="h4 timeline-item-title">Java Programming (Expired)</h4>
                   <span>Jan 2025 – May 2025</span>
                   <p class="timeline-text">iamneo – An NIIT Venture</p>
-                </li>
-                <li class="timeline-item">
+                </div>
+                <div class="experience-card">
                   <h4 class="h4 timeline-item-title">Data Structures & Algorithms (DSA) (Expired)</h4>
                   <span>Aug 2024 – Dec 2024</span>
                   <p class="timeline-text">iamneo – An NIIT Venture</p>
-                </li>
-                <li class="timeline-item">
+                </div>
+                <div class="experience-card">
                   <h4 class="h4 timeline-item-title">C++ Programming (Expired)</h4>
                   <span>Aug 2024 – Dec 2024</span>
                   <p class="timeline-text">iamneo – An NIIT Venture</p>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
 
             <div class="skills-category" style="margin-top: 20px;">
               <h4 class="h4" style="color: var(--orange-yellow-crayola); margin-bottom: 12px;">Cybersecurity</h4>
-              <ul class="timeline-list">
-                <li class="timeline-item">
+              <div class="experience-cards">
+                <div class="experience-card">
                   <h4 class="h4 timeline-item-title">Cyber Security Workshop</h4>
                   <span>Nov 2023</span>
                   <p class="timeline-text">Secuneus Tech.</p>
-                </li>
-                <li class="timeline-item">
+                </div>
+                <div class="experience-card">
                   <h4 class="h4 timeline-item-title">Cyber Security & Ethical Hacking</h4>
                   <span>Nov 2023</span>
                   <p class="timeline-text">Cisco · Skills: Linux, VMware Workstation</p>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
 
             <div class="skills-category" style="margin-top: 20px;">
               <h4 class="h4" style="color: var(--orange-yellow-crayola); margin-bottom: 12px;">Social Service & Leadership</h4>
-              <ul class="timeline-list">
-                <li class="timeline-item">
+              <div class="experience-cards">
+                <div class="experience-card">
                   <h4 class="h4 timeline-item-title">Social Services Internship Certificate</h4>
                   <span>Jul 2024</span>
                   <p class="timeline-text">Glad Bharat Foundation · Skills: Management, Communication, Project & Team Management</p>
-                </li>
-                <li class="timeline-item">
+                </div>
+                <div class="experience-card">
                   <h4 class="h4 timeline-item-title">Social Services Certificate</h4>
                   <span>Jul 2024</span>
                   <p class="timeline-text">LPUNSS</p>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
 
           </div>
