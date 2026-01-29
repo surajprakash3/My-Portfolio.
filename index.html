@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Engineering Portfolio</title>
+  <title> Portfolio</title>
 
   <!--
     - favicon
@@ -351,7 +351,8 @@ main {
 
 .avatar-box {
   background: var(--bg-gradient-onyx);
-  border-radius: 20px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .info-content .name {
@@ -463,6 +464,89 @@ main {
 
 
 .social-item .social-link:hover { color: var(--light-gray); }
+
+.social-link-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 10px;
+  background: var(--border-gradient-onyx);
+  color: var(--orange-yellow-crayola);
+  font-size: var(--fs-7);
+  transition: var(--transition-1);
+  box-shadow: var(--shadow-1);
+}
+
+.social-link-btn::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+  transition: var(--transition-1);
+}
+
+.social-link-btn {
+  position: relative;
+  z-index: 1;
+}
+
+.social-link-btn:hover,
+.social-link-btn:focus { background: var(--bg-gradient-yellow-1); }
+
+.social-link-btn:hover::before,
+.social-link-btn:focus::before { background: var(--bg-gradient-yellow-2); }
+
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.social-card {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--border-gradient-onyx);
+  color: var(--white-2);
+  box-shadow: var(--shadow-2);
+  transition: var(--transition-1);
+  margin: 0 auto;
+}
+
+.social-card::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+  transition: var(--transition-1);
+}
+
+.social-card:hover,
+.social-card:focus { background: var(--bg-gradient-yellow-1); }
+
+.social-card:hover::before,
+.social-card:focus::before { background: var(--bg-gradient-yellow-2); }
+
+.social-card ion-icon {
+  font-size: 36px;
+}
+
+.social-initials {
+  font-size: 20px;
+  font-weight: var(--fw-600);
+  letter-spacing: 0.5px;
+}
 
 
 
@@ -1989,6 +2073,10 @@ textarea.form-input::-webkit-resizer { display: none; }
           </li>
 
           <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Social</button>
+          </li>
+
+          <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
           </li>
 
@@ -2688,6 +2776,68 @@ textarea.form-input::-webkit-resizer { display: none; }
       </article>
 
       <!--
+        - #SOCIAL
+      -->
+
+      <article class="social" data-page="social">
+
+        <header>
+          <h2 class="h2 article-title">Social</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="globe-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Professional Social Media Platforms</h3>
+          </div>
+
+          <div class="social-grid">
+            <a class="social-card" href="https://www.linkedin.com/in/surajprakash2/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+            <a class="social-card" href="https://github.com/surajprakash3" target="_blank" rel="noopener" aria-label="GitHub">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <a class="social-card" href="https://www.hackerrank.com/profile/Sp_alphatech" target="_blank" rel="noopener" aria-label="HackerRank">
+              <span class="social-initials">HR</span>
+            </a>
+            <a class="social-card" href="https://leetcode.com/u/Sp_alphatech/" target="_blank" rel="noopener" aria-label="LeetCode">
+              <span class="social-initials">LC</span>
+            </a>
+            <a class="social-card" href="https://www.geeksforgeeks.org/profile/surajprv9zw" target="_blank" rel="noopener" aria-label="GeeksforGeeks">
+              <span class="social-initials">GFG</span>
+            </a>
+            <a class="social-card" href="https://www.codechef.com/users/sp_alphatech" target="_blank" rel="noopener" aria-label="CodeChef">
+              <span class="social-initials">CC</span>
+            </a>
+            <a class="social-card" href="https://learn.microsoft.com/en-us/users/surajprakash-8794/" target="_blank" rel="noopener" aria-label="Microsoft Learn">
+              <span class="social-initials">MS</span>
+            </a>
+            <a class="social-card" href="https://tryhackme.com/p/Spalphatech" target="_blank" rel="noopener" aria-label="TryHackMe">
+              <span class="social-initials">THM</span>
+            </a>
+          </div>
+
+          <h3 class="h3" style="margin: 25px 0 10px;">Semi-Professional Platforms</h3>
+
+          <div class="social-grid">
+            <a class="social-card" href="https://x.com/Sp_alphatech" target="_blank" rel="noopener" aria-label="X">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+            <a class="social-card" href="https://youtube.com/@techplusinformation?si=qXgSHoGYXPHbv5xs" target="_blank" rel="noopener" aria-label="YouTube">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </div>
+
+        </section>
+
+      </article>
+
+      <!--
         - #CONTACT
       -->
 
@@ -2802,6 +2952,9 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
   </script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
  
 </body>
