@@ -1,0 +1,154 @@
+vCard - Personal Portfolio
+
+# sidebar
+
+alt =Suraj Prakash
+Suraj Prakash
+cloud engineer and full stack developer
+
+Show Contacts
+
+Email
+surajprak101@gmail.com
+
+Phone:
+9802340923
+
+Birthday
+June 23, 1982
+
+Location
+jalandhar , punjab,india
+
+# navbar
+
+About
+Resume
+Contact
+
+# about
+
+About me
+
+I’m Suraj Prakash, a passionate Cloud Engineer and Full Stack Developer with a strong interest in building scalable, efficient, and user-friendly web applications. I enjoy turning ideas into real-world solutions using modern web technologies and cloud platforms.
+
+I focus on writing clean, maintainable code and continuously improving performance and user experience. Alongside technical skills, I value problem-solving, teamwork, and continuous learning. My goal is to create impactful digital products while growing as a technology professional.
+
+
+## service
+
+What i'm doing
+
+alt = design icon
+Web design
+The most modern and high-quality design made at a professional level.
+
+alt = Web development icon
+Web development
+High-quality development of sites at the professional level.
+
+
+
+alt=cloud 
+cloud services
+deployment of website or add other service to bussiness
+
+
+
+
+
+# resume
+
+Resume
+
+Education
+
+University school of the arts
+2007 — 2008
+Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et quas molestias exceptur.
+
+New york academy of art
+2006 — 2007
+Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est omnis..
+
+High school of art and design
+2002 — 2004
+Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur magni dolores eos.
+Lovely Professional University Phagwara, Punjab
+Bachelor of Technology - Computer Science and Engineering                                           
+Aug 2023 – Present 
+CGPA:6.99                      
+Gyan Bharti Residential Complex	 Bodhgaya, Bihar
+Intermediate - PCM; Percentage: 74.6% 
+ April 2021 - March 2022
+DAV	 Gaya, Bihar
+Matriculation; Percentage: 73.4%                                                                                
+April 2019 - March 2020
+
+Experience
+
+Lovely Professional University | Application Development in Java | Certificate                                          Jul 2025
+•	Engined multiple GUI-based applications using Java Swing, enhancing user interaction and functionality and leading to a 30% increase in usability and engagement. 
+•	Used object-oriented programming concepts such as inheritance, polymorphism, and encapsulation, improved code modularity and maintainability by 40%.
+•	Optimized file handling and data processing operations reduced input/output processing time by 50% and boosted application efficiency.
+
+
+My skills
+
+Web design
+80%
+cloud engineer
+70%
+website development
+80%
+
+
+
+# portfolio
+
+Portfolio
+
+All
+Web design
+Applications
+Web development
+
+Select category
+All
+Web design
+Applications
+Web development
+
+
+
+
+
+
+
+alt = summary
+Summary
+Web development
+
+alt = task manager
+Task Manager
+Applications
+
+
+
+
+
+
+
+
+
+# contact
+
+Contact
+
+Contact Form
+
+Full name
+Email address
+Your Message
+
+Send Message
