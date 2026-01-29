@@ -895,63 +895,6 @@ main {
   #PORTFOLIO
 \*-----------------------------------*/
 
-.filter-list { display: none; }
-
-.filter-select-box {
-  position: relative;
-  margin-bottom: 25px;
-}
-
-.filter-select {
-  background: var(--eerie-black-2);
-  color: var(--light-gray);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 12px 16px;
-  border: 1px solid var(--jet);
-  border-radius: 14px;
-  font-size: var(--fs-6);
-  font-weight: var(--fw-300);
-}
-
-.filter-select.active .select-icon { transform: rotate(0.5turn); }
-
-.select-list {
-  background: var(--eerie-black-2);
-  position: absolute;
-  top: calc(100% + 6px);
-  width: 100%;
-  padding: 6px;
-  border: 1px solid var(--jet);
-  border-radius: 14px;
-  z-index: 2;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: 0.15s ease-in-out;
-}
-
-.filter-select.active + .select-list {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: all;
-}
-
-.select-item button {
-  background: var(--eerie-black-2);
-  color: var(--light-gray);
-  font-size: var(--fs-6);
-  font-weight: var(--fw-300);
-  text-transform: capitalize;
-  width: 100%;
-  padding: 8px 10px;
-  border-radius: 8px;
-}
-
-.select-item button:hover { --eerie-black-2: hsl(240, 2%, 20%); }
-
 .project-list {
   display: grid;
   grid-template-columns: 1fr;
@@ -1620,27 +1563,6 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   .article-title { padding-bottom: 20px; }
-
-  .filter-select-box { display: none; }
-
-  .filter-list {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 25px;
-    padding-left: 5px;
-    margin-bottom: 30px;
-  }
-
-  .filter-item button {
-    color: var(--light-gray);
-    font-size: var(--fs-5);
-    transition: var(--transition-1);
-  }
-
-  .filter-item button:hover { color: var(--light-gray-70); }
-
-  .filter-item button.active { color: var(--orange-yellow-crayola); }
 
   /* portfolio and blog grid */
 
@@ -2391,6 +2313,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 
+      </article>
+
       <!--
         - #PORTFOLIO
       -->
@@ -2448,6 +2372,119 @@ textarea.form-input::-webkit-resizer { display: none; }
             </li>
 
           </ul>
+
+        </section>
+
+        <section class="timeline" style="margin-top: 35px;">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Chief Operating Officer (Part-time)</h4>
+              <span>Sep 2025 – Present</span>
+              <p class="timeline-text">Syntax · Jalandhar, Punjab, India · Hybrid</p>
+              <p class="timeline-text">Lead operational planning and cross-team coordination. Support strategic decision-making and team management.</p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Unit Leader – UMANG (Full-time)</h4>
+              <span>Jan 2025 – Present</span>
+              <p class="timeline-text">Unit Umang – LPUNSS · Jalandhar, Punjab, India · Skills: Team Leadership, Event Organizing</p>
+              <p class="timeline-text">Lead NSS unit activities and social initiatives. Manage volunteers and coordinate community events.</p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">NSS Candidate (Part-time)</h4>
+              <span>Jan 2025 – Present</span>
+              <p class="timeline-text">LPUNSS · Jalandhar, Punjab, India · Skills: Discipline, Parade</p>
+              <p class="timeline-text">Participate in discipline-focused training and community service activities.</p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Campus Ambassador</h4>
+              <span>Jul 2025 – Present</span>
+              <p class="timeline-text">Eduveda Academy · Hybrid</p>
+              <p class="timeline-text">Promote educational programs and student engagement initiatives.</p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Campus Ambassador</h4>
+              <span>Jun 2025 – Present</span>
+              <p class="timeline-text">JYESTA Corporate Entity</p>
+              <p class="timeline-text">Represent the organization on campus and support outreach programs.</p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Human Resources Intern</h4>
+              <span>Jun 2025 – Jul 2025</span>
+              <p class="timeline-text">Prashraya Welfare Foundation (Team Aashraya)</p>
+              <p class="timeline-text">Supported HR operations and volunteer coordination for welfare initiatives.</p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Business Development Intern</h4>
+              <span>May 2025 – Jun 2025</span>
+              <p class="timeline-text">d2d-YouthStory · Hybrid · Skills: Strategic Business Development, Business Support</p>
+              <p class="timeline-text">Supported business growth initiatives and partnership outreach.</p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Core Team Member</h4>
+              <span>Nov 2024 – Present</span>
+              <p class="timeline-text">AI Jalandhar · Jalandhar, Punjab, India · Skills: Python, Web Development</p>
+              <p class="timeline-text">Contribute to AI-focused technical discussions and community events.</p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Member (Part-time)</h4>
+              <span>Aug 2024 – Present</span>
+              <p class="timeline-text">RISC – Robotics and Intelligent System Community (LPU)</p>
+              <p class="timeline-text">Engage in robotics and intelligent systems learning activities.</p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Social Services Intern</h4>
+              <span>Jun 2024 – Jul 2024</span>
+              <p class="timeline-text">Glad Bharat Foundation</p>
+              <p class="timeline-text">Supported social development and community welfare programs.</p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Campus Ambassador</h4>
+              <span>Mar 2024 – Present</span>
+              <p class="timeline-text">DevTown</p>
+              <p class="timeline-text">Promote tech learning opportunities and developer programs among students.</p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Volunteer</h4>
+              <span>Aug 2023 – Dec 2024</span>
+              <p class="timeline-text">LPUNSS · Jalandhar, Punjab, India · Skills: Event Management</p>
+              <p class="timeline-text">Supported university-level social events and national campaigns.</p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Student</h4>
+              <span>Aug 2023 – Present</span>
+              <p class="timeline-text">Lovely Professional University · Punjab, India · Skills: Microservices, UI/UX, Cloud Architecture</p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Co-Founder (Full-time)</h4>
+              <span>Jun 2021 – Present</span>
+              <p class="timeline-text">Titanium Yoga Club, Gaya · Gaya, Bihar, India · Skills: Human Resources, Yoga</p>
+              <p class="timeline-text">Co-founded a wellness community focused on physical and mental well-being. Organize yoga sessions that promote resilience, mindfulness, and healthy living.</p>
+            </li>
+
+          </ol>
 
         </section>
 
