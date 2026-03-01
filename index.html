@@ -2223,7 +2223,7 @@
         inset: 0;
         pointer-events: none;
         overflow: hidden;
-        perspective: 1200px;
+        perspective: 1500px;
         z-index: 0;
       }
 
@@ -2232,28 +2232,28 @@
         border-radius: 50%;
         transform-style: preserve-3d;
         mix-blend-mode: screen;
-        filter: none;
-        opacity: 0.6;
-        box-shadow: 0 0 45px rgba(68, 212, 255, 0.22);
+        filter: blur(0.4px);
+        opacity: 0.72;
+        box-shadow: 0 0 65px rgba(68, 212, 255, 0.28);
         will-change: transform;
       }
 
       .bg-3d-scene .orb-1 {
-        width: 260px;
-        height: 260px;
+        width: 280px;
+        height: 280px;
         left: 8%;
         top: 15%;
         background: radial-gradient(circle at 35% 35%, rgba(68, 212, 255, 0.65), rgba(68, 212, 255, 0.05) 70%);
-        animation: orbFloatOne 8s ease-in-out infinite;
+        animation: orbFloatOne 7s ease-in-out infinite;
       }
 
       .bg-3d-scene .orb-2 {
-        width: 220px;
-        height: 220px;
+        width: 240px;
+        height: 240px;
         right: 10%;
         top: 22%;
         background: radial-gradient(circle at 30% 30%, rgba(123, 141, 255, 0.6), rgba(123, 141, 255, 0.06) 70%);
-        animation: orbFloatTwo 10s ease-in-out infinite;
+        animation: orbFloatTwo 9s ease-in-out infinite;
       }
 
       .bg-3d-scene .orb-3 {
@@ -2262,7 +2262,16 @@
         left: 26%;
         bottom: 6%;
         background: radial-gradient(circle at 32% 30%, rgba(90, 191, 255, 0.48), rgba(90, 191, 255, 0.04) 72%);
-        animation: orbFloatThree 12s ease-in-out infinite;
+        animation: orbFloatThree 11s ease-in-out infinite;
+      }
+
+      .bg-3d-scene .orb-4 {
+        width: 210px;
+        height: 210px;
+        right: 26%;
+        bottom: 12%;
+        background: radial-gradient(circle at 34% 34%, rgba(142, 186, 255, 0.55), rgba(142, 186, 255, 0.04) 72%);
+        animation: orbFloatFour 8.5s ease-in-out infinite;
       }
 
       @media (max-width: 1024px) {
@@ -2271,6 +2280,10 @@
         }
 
         .bg-3d-scene .orb-3 {
+          display: none;
+        }
+
+        .bg-3d-scene .orb-4 {
           display: none;
         }
       }
@@ -2287,37 +2300,49 @@
 
       @keyframes orbFloatOne {
         0% {
-          transform: translate3d(0, 0, -120px) rotateX(12deg) rotateY(-16deg);
+          transform: translate3d(0, 0, -190px) rotateX(14deg) rotateY(-18deg);
         }
         50% {
-          transform: translate3d(60px, -30px, 90px) rotateX(-10deg) rotateY(22deg);
+          transform: translate3d(92px, -48px, 170px) rotateX(-12deg) rotateY(28deg);
         }
         100% {
-          transform: translate3d(0, 0, -120px) rotateX(12deg) rotateY(-16deg);
+          transform: translate3d(0, 0, -190px) rotateX(14deg) rotateY(-18deg);
         }
       }
 
       @keyframes orbFloatTwo {
         0% {
-          transform: translate3d(0, 0, 70px) rotateX(-14deg) rotateY(18deg);
+          transform: translate3d(0, 0, 135px) rotateX(-16deg) rotateY(20deg);
         }
         50% {
-          transform: translate3d(-70px, 35px, -90px) rotateX(10deg) rotateY(-24deg);
+          transform: translate3d(-105px, 54px, -165px) rotateX(12deg) rotateY(-28deg);
         }
         100% {
-          transform: translate3d(0, 0, 70px) rotateX(-14deg) rotateY(18deg);
+          transform: translate3d(0, 0, 135px) rotateX(-16deg) rotateY(20deg);
         }
       }
 
       @keyframes orbFloatThree {
         0% {
-          transform: translate3d(0, 0, -70px) rotateX(8deg) rotateY(12deg);
+          transform: translate3d(0, 0, -130px) rotateX(10deg) rotateY(14deg);
         }
         50% {
-          transform: translate3d(-50px, -40px, 120px) rotateX(-12deg) rotateY(-18deg);
+          transform: translate3d(-86px, -62px, 205px) rotateX(-15deg) rotateY(-22deg);
         }
         100% {
-          transform: translate3d(0, 0, -70px) rotateX(8deg) rotateY(12deg);
+          transform: translate3d(0, 0, -130px) rotateX(10deg) rotateY(14deg);
+        }
+      }
+
+      @keyframes orbFloatFour {
+        0% {
+          transform: translate3d(0, 0, 170px) rotateX(-12deg) rotateY(12deg);
+        }
+        50% {
+          transform: translate3d(74px, -50px, -200px) rotateX(14deg) rotateY(-24deg);
+        }
+        100% {
+          transform: translate3d(0, 0, 170px) rotateX(-12deg) rotateY(12deg);
         }
       }
 
@@ -2416,10 +2441,23 @@
       .timeline-item-title,
       .blog-item-title,
       .modal-title {
-        background: linear-gradient(90deg, #f5fbff, #a7e7ff 45%, #9faeff);
+        color: #f6fbff;
+        background: linear-gradient(90deg, #ffffff 0%, #ecf7ff 48%, #e7ecff 100%);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        text-shadow: 0 0 28px rgba(196, 235, 255, 0.34);
+      }
+
+      :root {
+        --light-gray: #eaf4ff;
+        --light-gray-70: #dbeaf8;
+        --light-gray-50: #cbdff2;
+      }
+
+      body {
+        font-family: "Poppins", "Segoe UI", sans-serif;
+        color: #f7fbff;
       }
 
       .about-text,
@@ -2428,7 +2466,7 @@
       .project-category,
       .blog-text,
       .contact-info :is(.contact-link, time, address) {
-        color: var(--theme-muted);
+        color: #edf5ff;
       }
 
       .name {
@@ -2452,8 +2490,39 @@
       }
 
       .article-title {
-        letter-spacing: 0.3px;
+        letter-spacing: 0.45px;
+        font-weight: 700;
+        color: #f8fcff;
+        text-shadow: 0 0 22px rgba(170, 230, 255, 0.35);
         margin-bottom: 24px;
+      }
+
+      h1,
+      h2,
+      h3 {
+        position: relative;
+        display: inline-block;
+        padding: 10px 24px;
+        z-index: 1;
+      }
+
+      h1::before,
+      h2::before,
+      h3::before {
+        content: "";
+        position: absolute;
+        inset: -6px -14px -8px -14px;
+        border-radius: 58% 42% 55% 45% / 52% 58% 42% 48%;
+        background:
+          radial-gradient(circle at 18% 26%, rgba(109, 201, 255, 0.2) 0 18px, transparent 19px),
+          radial-gradient(circle at 82% 22%, rgba(123, 141, 255, 0.18) 0 16px, transparent 17px),
+          linear-gradient(145deg, rgba(12, 30, 48, 0.75), rgba(8, 22, 39, 0.72));
+        border: 1px solid rgba(109, 201, 255, 0.22);
+        box-shadow:
+          0 10px 24px rgba(0, 8, 30, 0.35),
+          inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+        z-index: -1;
+        pointer-events: none;
       }
 
       .about-text p,
@@ -2464,7 +2533,13 @@
       .contact-info :is(.contact-link, time, address) {
         font-size: 15px;
         line-height: 1.9;
-        font-weight: 400;
+        font-weight: 500;
+        letter-spacing: 0.12px;
+      }
+
+      .about .about-text,
+      .about .about-text p {
+        color: #eaf6ff;
       }
 
       .service-item-title,
@@ -2473,15 +2548,15 @@
       .project-title,
       .modal-title,
       .h4 {
-        letter-spacing: 0.2px;
-        font-weight: 600;
+        letter-spacing: 0.32px;
+        font-weight: 700;
       }
 
       .contact-title,
       .timeline-list span,
       .project-category,
       .blog-meta :is(.blog-category, time) {
-        color: #8fb2d2;
+        color: #e0ecf9;
       }
 
       .navbar-link {
@@ -2542,14 +2617,25 @@
       }
 
       .navbar-link {
-        color: #9db5d6;
+        color: #f1f7ff;
         font-weight: 500;
       }
 
       .navbar-link.active,
       .navbar-link:hover {
-        color: #ecf8ff;
+        color: #ffffff;
         text-shadow: none;
+      }
+
+      .social-name,
+      .social-handle,
+      .social-note,
+      .contact-link,
+      .timeline-text,
+      .service-item-text,
+      .blog-text,
+      .project-category {
+        color: #edf6ff !important;
       }
 
       .navbar-link::after {
@@ -2791,6 +2877,22 @@
         border: 1px solid rgba(255, 255, 255, 0.12);
       }
 
+      .projects .project-item > a,
+      .project-list .project-item > a {
+        border-radius: 22px 52px 26px 48px / 34px 28px 52px 36px;
+        overflow: hidden;
+      }
+
+      .projects .project-item:nth-child(even) > a,
+      .project-list .project-item:nth-child(even) > a {
+        border-radius: 52px 24px 48px 28px / 30px 50px 34px 46px;
+      }
+
+      .projects .project-img,
+      .project-list .project-img {
+        border-radius: 18px 40px 22px 36px / 28px 24px 40px 32px;
+      }
+
       .form-input,
       input,
       textarea {
@@ -2835,8 +2937,6 @@
 
       body::before,
       body::after,
-      .bg-3d-scene,
-      .bg-3d-scene .orb,
       .navbar::before,
       .navbar::after,
       .service-item::before,
@@ -2921,6 +3021,7 @@
       <span class="orb orb-1"></span>
       <span class="orb orb-2"></span>
       <span class="orb orb-3"></span>
+      <span class="orb orb-4"></span>
     </div>
 
     <main>
