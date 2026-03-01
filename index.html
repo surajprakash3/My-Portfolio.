@@ -2833,6 +2833,31 @@
         margin-bottom: 0;
       }
 
+      body::before,
+      body::after,
+      .bg-3d-scene,
+      .bg-3d-scene .orb,
+      .navbar::before,
+      .navbar::after,
+      .service-item::before,
+      .service-item::after,
+      .experience-card::before,
+      .experience-card::after,
+      .content-card::before,
+      .content-card::after,
+      .testimonials-item::before,
+      .testimonials-item::after,
+      .blog-post-item > a::before,
+      .blog-post-item > a::after,
+      .project-item > a::before,
+      .project-item > a::after,
+      .timeline-item::after,
+      .timeline .experience-card > .timeline-item-title::before,
+      .timeline .experience-card > .timeline-item-title::after {
+        content: none !important;
+        display: none !important;
+      }
+
       @media (max-width: 768px) {
         main {
           margin-top: 95px;
